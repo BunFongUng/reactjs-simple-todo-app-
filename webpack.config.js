@@ -1,14 +1,16 @@
 var config = {
-    entry: './main.js',
-
+    entry: './app/src/main.js',
+    resolve: {
+        extensions: ['', '.js', '.jsx']
+    },
     output: {
-        path: './dist/src/',
-        filename: 'index.js',
+        path: __dirname,
+        filename: 'app/src/index.js'
     },
 
     devServer: {
         inline: true,
-        port: 3333
+        port: 8888
     },
 
     module: {
